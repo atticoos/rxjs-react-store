@@ -1,6 +1,6 @@
 {
   "name": "rxjs-react-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An RxJS React Store Container implementation.",
   "main": "lib/index.js",
   "scripts": {
