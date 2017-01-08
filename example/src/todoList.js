@@ -16,6 +16,7 @@ class TodoList extends React.Component {
       <div>
         <h2>Todo List</h2>
 
+        {/* Input form */}
         <Form inline onSubmit={e => this.addTodo(e)}>
           <FormControl
             type="text"
@@ -25,6 +26,7 @@ class TodoList extends React.Component {
           <Button onClick={() => this.addTodo()}>Add</Button>
         </Form>
 
+        {/* List of Todos */}
         <ul>
           {this.props.todos.map((todo, i) => (
             <TodoItem
