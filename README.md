@@ -4,24 +4,7 @@ An RxJS React Store Container implementation.
 
 Used well with [rxjs-store](https://github.com/ajwhite/rxjs-store).
 
-## Simple Example
-```js
-import {connect} from 'rxjs-react-store';
-
-class HelloWorld extends React.Component {
-  render () {
-    <h1>{this.props.text}</h1>
-  }
-}
-
-const selector = state => ({
-  text: state.text
-});
-
-connect(selector)(HelloWorld);
-```
-
-## Full Usage
+## Example Usage
 
 ```js
 import {Provider, connect} from 'rxjs-react-store';
