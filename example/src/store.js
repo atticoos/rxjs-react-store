@@ -7,7 +7,7 @@ const TodoActions = {
    *
    * 1. The new todo is passed in.
    * 2. Then the store will pass in the last list of todos.
-   * 3. Finally the action will return the next list of todos w/ the new item.
+   * 3. Finally the action will return the next list of todos w/ the new item back to the store.
    */
   add: newTodo => todos => todos.concat(newTodo),
 
@@ -16,7 +16,7 @@ const TodoActions = {
    *
    * 1. The todo to remove is passed in.
    * 2. Then the store will pass in the last list of todos.
-   * 3. Finally the action will return the next list of todos w/o the item.
+   * 3. Finally the action will return the next list of todos w/o the item back to the store.
    */
   remove: oldTodo => todos => todos.filter(todo => todo !== oldTodo)
 };
