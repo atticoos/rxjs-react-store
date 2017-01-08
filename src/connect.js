@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Compose a store-connected React container
-export function createConnector (stateSelector, actionSelector) {
+export default function createConnector (stateSelector, actionSelector) {
   return function connect (Component) {
     return class Connected extends React.Component {
       // Access the store from the Provider context
