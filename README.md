@@ -33,26 +33,17 @@ const CounterActions = {
   decrement: (amount = 1) => count => count - amount
 };
 
-// Word actions (demonstration to show multiple stores)
-const WordActions = {
-  setWord: word => () => word,
-  clearWord: () => () => ''
-};
-
 // Create the store reducers
 const counter = createReducer(CounterActions, 0);
-const word = createReducer(WordActions, '');
 
 // Create the application store
 const store = combineReducers({
-  count: counter.store,
-  word: word.store
+  count: counter.store
 });
 
 // Create an object of the store actions
 const actions = {
-  counter: counter.actions,
-  word: word.actions
+  counter: counter.actions
 };
 
 // Wrap the application in the Provider, passing the store and actions
