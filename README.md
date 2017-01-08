@@ -2,6 +2,8 @@
 
 An RxJS React Store Container implementation.
 
+Used well with [rxjs-store](https://github.com/ajwhite/rxjs-store).
+
 ## Simple Example
 ```js
 import {connect} from 'rxjs-react-store';
