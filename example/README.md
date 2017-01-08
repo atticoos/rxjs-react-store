@@ -4,8 +4,8 @@ This will illustrate how to use RxJS Store and RxJS React Store to create a Reac
 
 ## Points of Interest
 - [Creating the store](src/store.js)
-- [Creating and connecting the component](src/todoList.js)
 - [Creating the root Provider component](src/index.js)
+- [Connecting the container component](src/todoList.js)
 
 ## Installation
 
